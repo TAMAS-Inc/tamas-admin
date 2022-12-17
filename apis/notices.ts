@@ -33,8 +33,7 @@ export const fetchNotices = async () => {
   const url = `${END_POINT}/all`;
 
   const res = await axios.get(url);
-  console.log(res.data);
-  return res.data as NoticeInfo;
+  return res.data as NoticeInfo[];
 };
 
 export const requestEditNotice: RequestEditNotice = async ({
